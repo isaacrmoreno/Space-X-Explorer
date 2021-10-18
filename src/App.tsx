@@ -1,6 +1,8 @@
 import { Redirect, Route } from 'react-router-dom';
 import { IonApp, IonRouterOutlet } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
+import { Helmet } from "react-helmet";
+
 import Home from './pages/Home';
 
 /* Core CSS required for Ionic components to work properly */
@@ -21,6 +23,12 @@ import '@ionic/react/css/display.css';
 
 const App: React.FC = () => (
   <IonApp>
+    <Helmet>
+      <meta charSet="utf-8" />
+      <title>Space X Explorer</title>
+      <link rel="canonical" href="https://github.com/isaacrmoreno/Space-X-Explorer" />
+      <meta name="description" content='Space X web app that utilizes Apollo-Client, GraphQL, and Ionic Framework to query mission launch history.' />
+    </Helmet>
     <IonReactRouter>
       <IonRouterOutlet>
         <Route exact path="/Home">
