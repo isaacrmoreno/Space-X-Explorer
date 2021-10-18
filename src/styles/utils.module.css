@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
+
+.heading2Xl {
+	font-size: 2.5rem;
+	line-height: 1.2;
+	font-weight: 800;
+	letter-spacing: -0.05rem;
+	margin: 1rem 0;
+	text-align: center;
+}
+
+.headingXl {
+	font-size: 2rem;
+	line-height: 1.3;
+	font-weight: 800;
+	letter-spacing: -0.05rem;
+	margin: 1rem 0;
+	text-align: center;
+}
+
+.headingLg {
+	font-size: 1.5rem;
+	line-height: 1.4;
+	margin: 1rem 0;
+	text-align: center;
+}
+
+.headingMd {
+	font-size: 1.2rem;
+	line-height: 1.5;
+	text-align: center;
+}
+
+.dataResult {
+	height: 600px;
+	overflow-y: auto;
+}
+
+.dataResult::-webkit-scrollbar {
+	display: none;
+}
+
+.ionHover:hover {
+	color: #ff4d65;
+	cursor: pointer;
+}
+
+.backgroundVideo {
+	position: absolute;
+	width: 100%;
+	left: 50%;
+	top: 50%;
+	height: 100%;
+	object-fit: cover;
+	transform: translate(-50%, -50%);
+	z-index: -1;
+}
+
+.center {
+	text-align: center;
+	font-family: 'Michroma', sans-serif;
+	font-size: 2em;
+}
+
+.centerXY {
+	text-align: center;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+/* .card {
+	margin: 3rem auto;
+	float: none;
+	margin-bottom: 10px;
+}
+
+.card:hover {
+	transform: scale(1.02);
+	transition: ease 0.08s;
+} */
+
+.a:link,
+.a:visited {
+	color: black;
+	text-decoration: none;
+}
+
+.a:hover,
+.a:active {
+	color: #ff4d65;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+@media (min-width: 540px) {
+	.searchBar,
+	.dataResult {
+		margin: auto;
+		margin-top: 20px;
+		max-width: 540px;
+	}
+}
+
+@media (max-width: 540px) {
+	.center {
+		font-size: 23px;
+	}
+}
